@@ -36,6 +36,12 @@ B                 --- move backwards of WORD
 e                 --- move to the end of the next word
 [n]w              --- move to the start of the next [n] word
 [n]e              --- move to the start of the next [n] word
+f[x]              --- find and jump to the next [x]
+f[x];;            --- find and jump to the next [x], and the next, and the next
+ctrl-d            --- move half page down
+ctrl-u            --- move half page up
+}                 --- jumps entire paragraphs downwards
+{                 --- jumps entire paragraphs upwards
 
 ----------copy and paste---------------------------------------
 yy                --- copy (yank) the line
@@ -67,6 +73,7 @@ dw                --- deleting until the start of the next word
 de                --- deleting to the end of the current word
 d$                --- deleting to the end of the line
 d2w               --- deleting until the start of the two words
+di"               --- delete in ""
 dd                --- deleting the line
 2dd               --- deleting two lines
 
@@ -83,6 +90,8 @@ R                 --- replace multiple letters
 ce                --- change until the end of a word
 c$                --- change to the end of the line
 cw                --- change until the start of the next word
+ci"               --- change in ""
+ciw               --- change in word
 u                 --- undo the previous action
 ctrl-r            --- redo the previous action
 U                 --- undo all the changes on a line
